@@ -164,7 +164,7 @@ class _DestinationSelectScreenState extends State<DestinationSelectScreen> {
                             shrinkWrap: true,
                             physics: const NeverScrollableScrollPhysics(),
                             itemCount: _results.length,
-                            separatorBuilder: (_, __) => const Divider(height: 1),
+                            separatorBuilder: (context, index) => const Divider(height: 1),
                             itemBuilder: (_, index) {
                               final result = _results[index];
                               return ListTile(
